@@ -1,9 +1,9 @@
 /**
  * Particleground demo
- * @author Jonathan Nicol - @mrjnicol
+ * @author Adrian Canovas - @adricanovas
+ * Inspired by Jonathan Nicol work - @mrjnicol
  */
 
-// This can be used to set the Particles Effects. Check README for more details!
 document.addEventListener('DOMContentLoaded', function () {
   var randomColor = Math.floor(Math.random()*16777215).toString(16);
   particleground(document.getElementById('particles'), {
