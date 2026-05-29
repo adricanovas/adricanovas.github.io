@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adrián Cánovas — PhD Student, Software Engineer">
+  <meta name="description" content="Adrián Cánovas — PhD Student, Machine Learning Engineer">
   <title>Adrián Cánovas</title>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
     <div class="hero-content">
       <div class="hero-avatar">AC</div>
       <h1>Adrián Cánovas</h1>
-      <p class="hero-tagline">PhD Student &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; AI</p>
+      <p class="hero-tagline">PhD Student &nbsp;·&nbsp; Machine Learning Engineer &nbsp;·&nbsp; AI</p>
       <div class="hero-links">
         <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
@@ -60,8 +60,8 @@
       <h2 class="section-title">About</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a PhD student and software engineer with a focus on artificial intelligence and data science. My research explores [your research area] at the intersection of [topic A] and [topic B].</p>
-          <p>I enjoy building tools and systems that solve real problems, from automation bots to machine learning pipelines. When I'm not researching or coding, I write about what I learn.</p>
+          <p>I'm a PhD student at the University of Murcia working on <em>Knowledge Acquisition through Artificial Intelligence Techniques for Sustainable Environments</em>. My research applies machine learning and remote sensing to environmental monitoring challenges, with a current focus on water quality assessment in coastal lagoon ecosystems.</p>
+          <p>I enjoy building tools that bridge data science and real-world problems — from satellite imagery pipelines to automation bots. Outside research, I work on software projects spanning computer vision, data engineering, and web development.</p>
         </div>
         <div class="about-info">
           <ul class="info-list">
@@ -91,7 +91,7 @@
 
         <article class="project-card">
           <div class="card-header">
-            <i class="fa-solid fa-robot card-icon"></i>
+            <i class="fa-brands fa-telegram card-icon"></i>
             <div class="card-links">
               <a href="https://github.com/adricanovas/TRSBot" target="_blank" rel="noopener" aria-label="GitHub">
                 <i class="fab fa-github"></i>
@@ -99,10 +99,12 @@
             </div>
           </div>
           <h3>TRSBot</h3>
-          <p>A bot designed to automate interactions and tasks. Brief description of what it does and what problem it solves.</p>
+          <p>Telegram chatbot for an amateur football team. Manages player registrations, match records, season statistics, and generates performance graphs per player.</p>
           <div class="card-tags">
             <span>Python</span>
-            <span>Automation</span>
+            <span>Telegram API</span>
+            <span>SQLite</span>
+            <span>Heroku</span>
           </div>
         </article>
 
@@ -116,9 +118,10 @@
             </div>
           </div>
           <h3>Temperature Data Imputation</h3>
-          <p>Machine learning approach to handle missing values in temperature sensor datasets. Describes the method and results.</p>
+          <p>Machine learning pipeline for handling missing values in temperature sensor time series. Explores and compares multiple imputation strategies.</p>
           <div class="card-tags">
             <span>Python</span>
+            <span>Jupyter</span>
             <span>Data Science</span>
             <span>ML</span>
           </div>
@@ -133,11 +136,51 @@
               </a>
             </div>
           </div>
-          <h3>VIA</h3>
-          <p>A computer vision project focused on [describe the VIA project goal and main functionality here].</p>
+          <h3>VIA — Artificial Vision</h3>
+          <p>Collection of computer vision scripts covering image calibration, activity zone detection, object detection via ROI curves, homographic panoramas, and 3D projection on reference surfaces.</p>
           <div class="card-tags">
-            <span>Computer Vision</span>
             <span>Python</span>
+            <span>OpenCV</span>
+            <span>NumPy</span>
+            <span>Jupyter</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <i class="fa-solid fa-file-invoice card-icon"></i>
+            <div class="card-links">
+              <a href="https://github.com/adricanovas/Spring-Facturas" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>Spring Facturas</h3>
+          <p>Invoice management web application built with Spring Boot. Supports CRUD operations, consolidated/unconsolidated invoice states, and JPA-backed persistence.</p>
+          <div class="card-tags">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>JPA</span>
+            <span>Thymeleaf</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-header">
+            <i class="fa-solid fa-flask card-icon"></i>
+            <div class="card-links">
+              <a href="https://github.com/adricanovas/retoFLI" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3>RetoFLI</h3>
+          <p>Flask web application that collects user input, processes it server-side, and presents results via a dynamic interface. Deployed on Heroku with session-backed form handling.</p>
+          <div class="card-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Jinja2</span>
+            <span>Heroku</span>
           </div>
         </article>
 
@@ -150,16 +193,17 @@
     <div class="container">
       <h2 class="section-title">Articles</h2>
       <div class="articles-list">
-        <!-- Example article item (duplicate and fill in when you publish):
         <article class="article-item">
-          <span class="article-date">Jan 2025</span>
+          <span class="article-date">2025</span>
           <div>
-            <h3><a href="#">Article title goes here</a></h3>
-            <p>Short description or abstract of the article.</p>
+            <h3>
+              <a href="https://arxiv.org/abs/2510.09736" target="_blank" rel="noopener">
+                Chlorophyll-a Mapping and Prediction in the Mar Menor Lagoon Using C2RCC-Processed Sentinel-2 Imagery
+              </a>
+            </h3>
+            <p>A Martínez-Ibarra, A González-Vidal, <strong>A Cánovas-Rodríguez</strong>, AF Skarmeta &mdash; <em>arXiv preprint arXiv:2510.09736</em></p>
           </div>
         </article>
-        -->
-        <p class="empty-state">Coming soon — articles and notes on my research in progress.</p>
       </div>
     </div>
   </section>
@@ -178,7 +222,7 @@
   <!-- Footer -->
   <footer>
     <div class="container footer-inner">
-      <p>&copy; 2025 Adrián Cánovas</p>
+      <p>&copy; 2026 Adrián Cánovas</p>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/adricanovas/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
