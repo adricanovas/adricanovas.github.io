@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adrián Cánovas — PhD Student, Machine Learning Engineer">
-  <title>Adrián Cánovas</title>
+  <meta name="description" content="Adrián Cánovas Rodríguez — PhD Researcher in Computer Science, Machine Learning &amp; Remote Sensing, University of Murcia">
+  <title>Adrián Cánovas Rodríguez</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,218 +17,226 @@
 
   <!-- Navigation -->
   <nav id="nav">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">AC</a>
+    <div class="nav-inner">
+      <a href="#about" class="nav-brand">Adrián Cánovas Rodríguez</a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#articles">Articles</a></li>
-        <li><a href="#cv" class="nav-cta">CV</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#cv">CV</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="hero">
-    <canvas id="particles-canvas"></canvas>
-    <div class="hero-content">
-      <div class="hero-avatar">AC</div>
-      <h1>Adrián Cánovas</h1>
-      <p class="hero-tagline">PhD Student &nbsp;·&nbsp; Machine Learning Engineer &nbsp;·&nbsp; AI</p>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/adricanovas/" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:adriancr@um.es" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-    <a href="#about" class="scroll-down" aria-label="Scroll down">
-      <i class="fa-solid fa-chevron-down"></i>
-    </a>
-  </section>
+  <!-- Two-column page layout -->
+  <div class="page-wrapper">
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I'm a PhD student at the University of Murcia working on <em>Knowledge Acquisition through Artificial Intelligence Techniques for Sustainable Environments</em>. My research applies machine learning and remote sensing to environmental monitoring challenges, with a current focus on water quality assessment in coastal lagoon ecosystems.</p>
-          <p>I enjoy building tools that bridge data science and real-world problems — from satellite imagery pipelines to automation bots. Outside research, I work on software projects spanning computer vision, data engineering, and web development.</p>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="profile-avatar" id="profile-avatar">
+          <img src="assets/profile.jpg" alt="Adrián Cánovas Rodríguez">
         </div>
-        <div class="about-info">
-          <ul class="info-list">
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:adriancr@um.es">adriancr@um.es</a>
-            </li>
-            <li>
-              <i class="fab fa-linkedin"></i>
-              <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener">adricanovas</a>
-            </li>
-            <li>
-              <i class="fab fa-github"></i>
-              <a href="https://github.com/adricanovas/" target="_blank" rel="noopener">adricanovas</a>
-            </li>
-          </ul>
-        </div>
+
+        <h1 class="profile-name">Adrián Cánovas Rodríguez</h1>
+        <p class="profile-title">PhD Student &amp; Associate Professor</p>
+        <p class="profile-dept">Dept. of Information &amp; Communication Engineering</p>
+        <p class="profile-uni">University of Murcia, Spain</p>
+
+        <ul class="profile-links">
+          <li>
+            <a href="mailto:adriancr@um.es">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>adriancr@um.es</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/adricanovas" target="_blank" rel="noopener">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span>adricanovas</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span>adricanovas</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://orcid.org/0009-0002-7986-5615" target="_blank" rel="noopener">
+              <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+              <span>0009-0002-7986-5615</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </aside>
 
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
+    <!-- Main Content -->
+    <main class="main-content">
 
-        <article class="project-card">
-          <div class="card-header">
-            <i class="fa-brands fa-telegram card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/adricanovas/TRSBot" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fab fa-github"></i>
+      <!-- About -->
+      <section id="about">
+        <h2>About</h2>
+        <p>I graduated in Computer Engineering from the <a href="https://www.um.es" target="_blank" rel="noopener">University of Murcia</a> in 2021, and completed a Master's degree the following year, deepening my expertise in data-driven methods and machine learning applied to complex real-world systems.</p>
+        <p>Since November 2024, I am a PhD Student in Computer Science at the University of Murcia (Department of Information and Communication Engineering), under the research line <em>Knowledge Acquisition through Artificial Intelligence Techniques for Sustainable Environments</em>. My doctoral work focuses on the application of machine learning and deep learning techniques to environmental monitoring, combining data from heterogeneous sources such as IoT sensors and satellite imagery to address real-world sustainability challenges. Alongside my doctoral research, I serve as an Associate Professor in the same department, contributing to undergraduate and postgraduate teaching in computer science and artificial intelligence.</p>
+        <p>I have participated in national research and innovation projects in areas such as precision agriculture, smart monitoring, and environmental data analysis, collaborating with both academic institutions and industry partners. In 2026, I completed a research stay at <strong>IBM Research Europe</strong> in Dublin, Ireland, where I gained experience in applied AI research in an international industrial environment.</p>
+
+        <h3>Research Interests</h3>
+        <ul class="interest-list">
+          <li>Machine Learning &amp; Deep Learning (PyTorch, TensorFlow, scikit-learn)</li>
+          <li>Remote Sensing &amp; Satellite Image Analysis (Sentinel-2, Copernicus)</li>
+          <li>Environmental Monitoring — Water Quality, Desertification, Soil Moisture</li>
+          <li>Agricultural AI — Crop Disease Classification, Forest Inventory</li>
+          <li>Federated Learning</li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul class="education-list">
+          <li>
+            <span class="edu-degree">PhD in Computer Science</span>
+            <span class="edu-inst">University of Murcia &mdash; <span class="edu-year">Nov 2024 – present</span></span>
+            <span class="edu-sub">Dept. of Information &amp; Communication Engineering</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <ol class="pub-list">
+
+          <li class="pub-item">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2606.21475" target="_blank" rel="noopener">
+                Deep Learning for Soil Moisture Estimation: Fusing Satellite Data with Optimally-Lagged Meteorological Features
               </a>
+            </h3>
+            <p class="pub-authors">A Martínez-Ibarra, A González-Vidal, <strong>A Cánovas-Rodríguez</strong>, AF Skarmeta</p>
+            <p class="pub-venue"><em>arXiv preprint</em> arXiv:2606.21475 &mdash; 2026</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2606.21475" target="_blank" rel="noopener" class="pub-badge">arXiv</a>
+              <a href="https://doi.org/10.48550/ARXIV.2606.21475" target="_blank" rel="noopener" class="pub-badge">DOI</a>
             </div>
-          </div>
-          <h3>TRSBot</h3>
-          <p>Telegram chatbot for an amateur football team. Manages player registrations, match records, season statistics, and generates performance graphs per player.</p>
-          <div class="card-tags">
-            <span>Python</span>
-            <span>Telegram API</span>
-            <span>SQLite</span>
-            <span>Heroku</span>
-          </div>
-        </article>
+          </li>
 
-        <article class="project-card">
-          <div class="card-header">
-            <i class="fa-solid fa-temperature-half card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/adricanovas/TemperatureDataImputation" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fab fa-github"></i>
+          <li class="pub-item">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2606.02045" target="_blank" rel="noopener">
+                Attention Mechanisms and Transfer Learning for Robust Peach Leaf Damage Classification Under Domain Shift
               </a>
+            </h3>
+            <p class="pub-authors">A Martínez-Ibarra, <strong>A Cánovas-Rodríguez</strong>, A González-Vidal, AF Skarmeta</p>
+            <p class="pub-venue"><em>arXiv preprint</em> arXiv:2606.02045 &mdash; 2026</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2606.02045" target="_blank" rel="noopener" class="pub-badge">arXiv</a>
+              <a href="https://doi.org/10.48550/ARXIV.2606.02045" target="_blank" rel="noopener" class="pub-badge">DOI</a>
             </div>
-          </div>
-          <h3>Temperature Data Imputation</h3>
-          <p>Machine learning pipeline for handling missing values in temperature sensor time series. Explores and compares multiple imputation strategies.</p>
-          <div class="card-tags">
-            <span>Python</span>
-            <span>Jupyter</span>
-            <span>Data Science</span>
-            <span>ML</span>
-          </div>
-        </article>
+          </li>
 
-        <article class="project-card">
-          <div class="card-header">
-            <i class="fa-solid fa-eye card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/adricanovas/VIA" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <h3>VIA — Artificial Vision</h3>
-          <p>Collection of computer vision scripts covering image calibration, activity zone detection, object detection via ROI curves, homographic panoramas, and 3D projection on reference surfaces.</p>
-          <div class="card-tags">
-            <span>Python</span>
-            <span>OpenCV</span>
-            <span>NumPy</span>
-            <span>Jupyter</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="card-header">
-            <i class="fa-solid fa-file-invoice card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/adricanovas/Spring-Facturas" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <h3>Spring Facturas</h3>
-          <p>Invoice management web application built with Spring Boot. Supports CRUD operations, consolidated/unconsolidated invoice states, and JPA-backed persistence.</p>
-          <div class="card-tags">
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>JPA</span>
-            <span>Thymeleaf</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="card-header">
-            <i class="fa-solid fa-flask card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/adricanovas/retoFLI" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <h3>RetoFLI</h3>
-          <p>Flask web application that collects user input, processes it server-side, and presents results via a dynamic interface. Deployed on Heroku with session-backed form handling.</p>
-          <div class="card-tags">
-            <span>Python</span>
-            <span>Flask</span>
-            <span>Jinja2</span>
-            <span>Heroku</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Articles -->
-  <section id="articles">
-    <div class="container">
-      <h2 class="section-title">Articles</h2>
-      <div class="articles-list">
-        <article class="article-item">
-          <span class="article-date">2025</span>
-          <div>
-            <h3>
+          <li class="pub-item">
+            <h3 class="pub-title">
               <a href="https://arxiv.org/abs/2510.09736" target="_blank" rel="noopener">
                 Chlorophyll-a Mapping and Prediction in the Mar Menor Lagoon Using C2RCC-Processed Sentinel-2 Imagery
               </a>
             </h3>
-            <p>A Martínez-Ibarra, A González-Vidal, <strong>A Cánovas-Rodríguez</strong>, AF Skarmeta &mdash; <em>arXiv preprint arXiv:2510.09736</em></p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+            <p class="pub-authors">A Martínez-Ibarra, A González-Vidal, <strong>A Cánovas-Rodríguez</strong>, AF Skarmeta</p>
+            <p class="pub-venue"><em>arXiv / Zenodo</em> &mdash; 2026</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2510.09736" target="_blank" rel="noopener" class="pub-badge">arXiv</a>
+              <a href="https://doi.org/10.5281/zenodo.18769187" target="_blank" rel="noopener" class="pub-badge">DOI</a>
+            </div>
+          </li>
 
-  <!-- CV -->
-  <section id="cv">
-    <div class="container cv-container">
-      <h2 class="section-title">Curriculum Vitae</h2>
-      <p>Download my latest CV or view it in your browser.</p>
-      <a href="deedy.pdf" class="btn-primary" target="_blank" rel="noopener">
-        <i class="fa-solid fa-download"></i> Download CV
-      </a>
-    </div>
-  </section>
+        </ol>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+
+          <article class="port-card">
+            <div class="port-card-header">
+              <h3><a href="https://github.com/adricanovas/turbidity_satellite_estimation" target="_blank" rel="noopener">turbidity_satellite_estimation</a></h3>
+              <a href="https://github.com/adricanovas/turbidity_satellite_estimation" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Mar Menor Lagoon surface turbidity estimation and analysis using Sentinel-2 satellite imagery.</p>
+            <div class="port-tags"><span>Jupyter</span><span>Sentinel-2</span><span>Water Quality</span></div>
+          </article>
+
+          <article class="port-card">
+            <div class="port-card-header">
+              <h3><a href="https://github.com/adricanovas/peach-leaf-cbam" target="_blank" rel="noopener">peach-leaf-cbam</a></h3>
+              <a href="https://github.com/adricanovas/peach-leaf-cbam" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Attention-enhanced CNNs (CBAM) for agricultural leaf damage classification under domain shift conditions.</p>
+            <div class="port-tags"><span>PyTorch</span><span>CBAM</span><span>Computer Vision</span></div>
+          </article>
+
+          <article class="port-card">
+            <div class="port-card-header">
+              <h3><a href="https://github.com/adricanovas/ForestAnnotationRefinement" target="_blank" rel="noopener">ForestAnnotationRefinement</a></h3>
+              <a href="https://github.com/adricanovas/ForestAnnotationRefinement" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Evaluates the impact of manual annotation refinement on instance segmentation accuracy for forest inventory systems.</p>
+            <div class="port-tags"><span>Jupyter</span><span>Segmentation</span><span>Forestry</span></div>
+          </article>
+
+          <article class="port-card">
+            <div class="port-card-header">
+              <h3><a href="https://github.com/adricanovas/sat-img-download" target="_blank" rel="noopener">sat-img-download</a></h3>
+              <a href="https://github.com/adricanovas/sat-img-download" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Downloads, cloud-masks, and crops imagery from the Copernicus Data Space Ecosystem.</p>
+            <div class="port-tags"><span>Jupyter</span><span>Copernicus</span><span>Sentinel-2</span></div>
+          </article>
+
+          <article class="port-card">
+            <div class="port-card-header">
+              <h3><a href="https://github.com/adricanovas/evaluation_desertification" target="_blank" rel="noopener">evaluation_desertification</a></h3>
+              <a href="https://github.com/adricanovas/evaluation_desertification" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Desertification assessment using remote sensing data and machine learning techniques.</p>
+            <div class="port-tags"><span>Jupyter</span><span>Remote Sensing</span><span>ML</span></div>
+          </article>
+
+          <article class="port-card">
+            <div class="port-card-header">
+              <h3><a href="https://github.com/adricanovas/Template-TF-FIUM" target="_blank" rel="noopener">Template-TF-FIUM</a></h3>
+              <a href="https://github.com/adricanovas/Template-TF-FIUM" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>LaTeX thesis template for the Faculty of Computer Science (FIUM) at the University of Murcia.</p>
+            <div class="port-tags"><span>LaTeX</span><span>Template</span><span>Academic</span></div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CV -->
+      <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>Download my latest CV or view it directly in your browser.</p>
+        <a href="docs/CV.pdf" class="btn-cv" target="_blank" rel="noopener">
+          <i class="fa-solid fa-file-pdf"></i> Download CV (PDF)
+        </a>
+      </section>
+
+    </main>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <div class="container footer-inner">
-      <p>&copy; 2026 Adrián Cánovas</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/adricanovas/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:adriancr@um.es" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-      </div>
+    <div class="footer-inner">
+      <p>Adrián Cánovas Rodríguez &mdash; <a href="mailto:adriancr@um.es">adriancr@um.es</a></p>
+      <p class="footer-links-row">
+        <a href="https://github.com/adricanovas" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/adricanovas/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="https://orcid.org/0009-0002-7986-5615" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i></a>
+      </p>
     </div>
   </footer>
 
